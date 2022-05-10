@@ -3,17 +3,13 @@
 fun main(args: Array<String>){
  println()
  println("---Poker Combinations---")
- val kombo = combinations()
- kombo.cards()
+ val combination = ConditionsAndCombinations()
+ combination.SeniorityCombinations()
  println()
  println("---DECK OF CARDS----")
  println()
- var res = cardsSuits()
- res.deckС()
-
-
-
-
+ var result = CardsSuits()
+ result.listCardsSuits()
 }
 
 

@@ -1,4 +1,4 @@
-enum class value(val valueser:Any) {
+enum class CardSymbols(val designations:Any) {
     TWO(2),
     THREE(3),
     FOUR(4),
@@ -12,8 +12,8 @@ enum class value(val valueser:Any) {
     QUEEN("QUEEN"),
     KING("KING"),
     ACE("ACE");
-  fun kolCar(){
-      val lol = listOf<Any>(valueser)
-      println(lol)
-  }
+    fun CardDeck(){
+        val DeckCardsList = listOf<Any>(designations)
+        println(DeckCardsList)
+    }
 }
