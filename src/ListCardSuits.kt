@@ -1,6 +1,6 @@
 enum class ListCardSuits(val suits:String) {
-    CHIRWA("CHIRWA"),
-    KRESTA("KRESTA"),
-    BUBA("BUBA"),
-    PIKA("PIKA");
+    HEARTS("HEARTS"),
+    CLUBS("CLUBS"),
+    DIAMONDS("DIAMONDS"),
+    SPADES("SPADES");
 }

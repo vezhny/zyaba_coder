@@ -4,7 +4,7 @@ enum class CardSymbols(val designations:Any) {
     FOUR(4),
     FIVE(5),
     SIX(6),
-    SEV(7),
+    SEVEN(7),
     EIGHT(8),
     NINE(9),
     TEN(10),
