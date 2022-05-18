@@ -1,5 +1,3 @@
-
-
 fun main(args: Array<String>){
  println()
  println("---Poker Combinations---")
@@ -10,6 +8,15 @@ fun main(args: Array<String>){
  println()
  var result = CardsSuits()
  result.listCardsSuits()
+ result.listlist()
+
+
+
+ println()
+
+
+
+
 }
 
 

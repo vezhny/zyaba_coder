@@ -3,4 +3,7 @@ enum class ListCardSuits(val suits:String) {
     CLUBS("CLUBS"),
     DIAMONDS("DIAMONDS"),
     SPADES("SPADES");
+
+
+
 }
