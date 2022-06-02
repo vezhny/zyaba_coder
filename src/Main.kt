@@ -1,4 +1,5 @@
-fun main(args: Array<String>){
+
+fun main(args: Array<String>) {
  println()
  println("---Poker Combinations---")
  val combination = ConditionsAndCombinations()
@@ -6,18 +7,20 @@ fun main(args: Array<String>){
  println()
  println("---DECK OF CARDS----")
  println()
- var result = CardsSuits()
- result.listCardsSuits()
- result.listlist()
+ val result = CardsSuits()
+ var cards = result.generateCards()
+ cards = result.mixCards(cards)
+ println("")
+ cards = result.mixCards(cards)
+ println("")
+ cards = result.mixCards(cards)
 
 
 
- println()
 
 
+ }
 
-
-}
 
 
 
