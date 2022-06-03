@@ -10,7 +10,6 @@ class CardsSuits() {
                 cards.add(Card(deck, suit))
             }
         }
-
         return cards
     }
     fun mixCards (cards: MutableList<Card>): MutableList<Card> {
@@ -21,12 +20,14 @@ class CardsSuits() {
             cards.removeAt(targetIndex)
         }
         mixedCards.forEach { card ->
-            println(card)
+//            println(card)
         }
         return mixedCards
-
     }
-
+    fun printCard() {
+        val printMixCards = mixCards(generateCards())
+        println(printMixCards)
+    }
 }
 
 

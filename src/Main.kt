@@ -8,18 +8,10 @@ fun main(args: Array<String>) {
  println("---DECK OF CARDS----")
  println()
  val result = CardsSuits()
- var cards = result.generateCards()
- cards = result.mixCards(cards)
- println("")
- cards = result.mixCards(cards)
- println("")
- cards = result.mixCards(cards)
-
-
-
-
-
- }
+ result.printCard()
+// var cards = result.generateCards()
+// cards = result.mixCards(cards)
+}
 
 
 
