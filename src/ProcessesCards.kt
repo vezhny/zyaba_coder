@@ -1,8 +1,8 @@
 import kotlin.random.Random
 
-class CardsSuits() {
-    fun generateCards(): MutableList<Card> {
-        val cardsSuits = ListCardSuits.values()
+class ProcessesCards() {
+    private fun generateListCards(): MutableList<Card> {
+        val cardsSuits = CardSuits.values()
         val cardsDeck = CardSymbols.values()
         val cards: MutableList<Card> = mutableListOf()
         cardsSuits.forEach { suit ->
@@ -12,7 +12,7 @@ class CardsSuits() {
         }
         return cards
     }
-    fun mixCards (cards: MutableList<Card>): MutableList<Card> {
+    private fun shufflingListCards (cards: MutableList<Card>): MutableList<Card> {
         val mixedCards : MutableList<Card> = mutableListOf()
         while (cards.isNotEmpty()){
             val targetIndex = Random.nextInt(cards.size)
@@ -20,13 +20,11 @@ class CardsSuits() {
             cards.removeAt(targetIndex)
         }
         mixedCards.forEach { card ->
-//            println(card)
         }
         return mixedCards
     }
-    fun printCard() {
-        val printMixCards = mixCards(generateCards())
-        println(printMixCards)
+    fun printListCards() {
+        println(shufflingListCards(generateListCards()))
     }
 }
 

@@ -1,4 +1,4 @@
-enum class ListCardSuits(val suits:Any) {
+enum class CardSuits(val suits:Any) {
     HEARTS("HEARTS"),
     CLUBS("CLUBS"),
     DIAMONDS("DIAMONDS"),
