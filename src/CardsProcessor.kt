@@ -22,7 +22,9 @@ class CardsProcessor() {
         return mixedCards
     }
     fun printListCards(mixedCards:MutableList<Card>) {
-        println(mixedCards)
+        mixedCards.forEach { cardsList->
+            println(cardsList)
+        }
     }
 }
 

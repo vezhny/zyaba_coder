@@ -7,10 +7,10 @@ fun main(args: Array<String>) {
  println()
  println("---DECK OF CARDS----")
  println()
- val result = CardsProcessor()
- var cards = result.generateCards()
- cards = result.mixCards(cards)
- result.printListCards(cards)
+ val cardsProcessor = CardsProcessor()
+ var cards = cardsProcessor.generateCards()
+ cards = cardsProcessor.mixCards(cards)
+ cardsProcessor.printListCards(cards)
 }
 
 
