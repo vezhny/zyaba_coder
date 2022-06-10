@@ -13,13 +13,13 @@ class CardsProcessor() {
         return cards
     }
    fun mixCards (cards: MutableList<Card>): MutableList<Card> {
-        val mixedCards : MutableList<Card> = mutableListOf()
+        val listCards : MutableList<Card> = mutableListOf()
         while (cards.isNotEmpty()){
             val targetIndex = Random.nextInt(cards.size)
-            mixedCards.add(cards[targetIndex])
+            listCards.add(cards[targetIndex])
             cards.removeAt(targetIndex)
         }
-        return mixedCards
+        return listCards
     }
     fun printListCards(mixedCards:MutableList<Card>) {
         mixedCards.forEach { cardsList->
