@@ -12,8 +12,5 @@ enum class CardSymbols(val designations:Any) {
     QUEEN("QUEEN"),
     KING("KING"),
     ACE("ACE");
-    fun CardDeck(){
-        val DeckCardsList = listOf<Any>(designations)
-        println(DeckCardsList)
-    }
+
 }
