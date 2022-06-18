@@ -21,6 +21,14 @@ class CardsProcessor() {
         }
         return mixedCards
     }
+     fun shuffling(cards: MutableList<Card>):MutableList<Card> {
+        val intRandom = (0..10).random()
+        while (cards.isEmpty()) {
+            val targetInd = Random.nextInt(intRandom)
+           cards[targetInd]
+        }
+         return cards
+    }
     fun printListCards(cardsList:MutableList<Card>) {
         cardsList.forEach { listCards->
             println(listCards)

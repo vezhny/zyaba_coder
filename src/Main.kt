@@ -10,6 +10,7 @@ fun main(args: Array<String>) {
  val cardsProcessor = CardsProcessor()
  var cards = cardsProcessor.generateCards()
  cards = cardsProcessor.mixCards(cards)
+cards = cardsProcessor.shuffling(cards)
  cardsProcessor.printListCards(cards)
 }
 
