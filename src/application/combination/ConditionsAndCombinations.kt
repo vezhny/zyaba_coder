@@ -1,4 +1,4 @@
-
+package combination
 class ConditionsAndCombinations() {
     fun SeniorityCombinations() {
 
