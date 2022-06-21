@@ -1,3 +1,5 @@
+package card
+
 import kotlin.random.Random
 
 class CardsProcessor() {
@@ -19,7 +21,9 @@ class CardsProcessor() {
             mixedCards.add(cards[targetIndex])
             cards.removeAt(targetIndex)
         }
-        return mixedCards
+       val randomNumber = (0..100).random()
+       val shuffDeck = mixedCards.shuffle(Random(randomNumber))
+       return mixedCards
     }
     fun printListCards(cardsList:MutableList<Card>) {
         cardsList.forEach { listCards->

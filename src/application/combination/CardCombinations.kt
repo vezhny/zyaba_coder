@@ -1,3 +1,5 @@
+package combination
+
 enum class CardCombinations(val combinationsName: String, val combinationsValues: Int? = 10) {
 
     FLASH_ROJAL("Flash Rojal",10),
@@ -9,6 +11,6 @@ enum class CardCombinations(val combinationsName: String, val combinationsValues
     SET("Set",4),
     TWO_PAIRS("Two Pairs",3),
     PAIR("Pair" ,2),
-    HIGH_CARD("High Card",1)
+    HIGH_CARD("High card.Card",1)
 
 }

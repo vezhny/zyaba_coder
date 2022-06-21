@@ -1,3 +1,5 @@
+package card
+
 enum class CardSuits(val suits:Any) {
     HEARTS("HEARTS"),
     CLUBS("CLUBS"),
