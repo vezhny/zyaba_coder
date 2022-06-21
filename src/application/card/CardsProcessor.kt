@@ -15,15 +15,9 @@ class CardsProcessor() {
         return cards
     }
    fun mixCards (cards: MutableList<Card>): MutableList<Card> {
-        val mixedCards : MutableList<Card> = mutableListOf()
-        while (cards.isNotEmpty()){
-            val targetIndex = Random.nextInt(cards.size)
-            mixedCards.add(cards[targetIndex])
-            cards.removeAt(targetIndex)
-        }
-       val randomNumber = (0..100).random()
-       val shuffDeck = mixedCards.shuffle(Random(randomNumber))
-       return mixedCards
+       val numberOfShuffles = (0..100).random()
+       cards.shuffle(Random(numberOfShuffles))
+       return cards
     }
     fun printListCards(cardsList:MutableList<Card>) {
         cardsList.forEach { listCards->
