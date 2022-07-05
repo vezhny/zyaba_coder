@@ -2,7 +2,7 @@ package card
 
 class Card(var value: CardSymbols, var suit: CardSuits) {
     override fun toString(): String {
-        return "($value - $suit)"
+        return "Card ($value - $suit)"
     }
 }
 

@@ -11,6 +11,6 @@ enum class CardCombinations(val combinationsName: String, val combinationsValues
     SET("Set",4),
     TWO_PAIRS("Two Pairs",3),
     PAIR("Pair" ,2),
-    HIGH_CARD("High card.Card",1)
+    HIGH_CARD("High Card",1)
 
 }
