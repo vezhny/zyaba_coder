@@ -1,3 +1,5 @@
+package card
+
 enum class CardSymbols(val designations:Any) {
     TWO(2),
     THREE(3),

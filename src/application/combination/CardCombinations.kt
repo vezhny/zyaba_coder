@@ -1,3 +1,5 @@
+package combination
+
 enum class CardCombinations(val combinationsName: String, val combinationsValues: Int? = 10) {
 
     FLASH_ROJAL("Flash Rojal",10),
